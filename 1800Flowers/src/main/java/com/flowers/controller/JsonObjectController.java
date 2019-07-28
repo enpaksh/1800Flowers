@@ -34,7 +34,7 @@ public class JsonObjectController {
 		return Collections.singletonMap("count", objService.uniqueUserIdTotalCount());
 	}
 	
-	@RequestMapping("/get/unique/userid")
+	@RequestMapping("/unique/userid")
 	public Map getUniqueUserId() {
 		return Collections.singletonMap("userid", objService.getUniqueUserIdCount());
 	}
