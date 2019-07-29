@@ -26,3 +26,17 @@ GET: http://localhost:8085/unique/userid
 
 # Get all objects
 GET: localhost:8085/objects
+
+# Deploy application in docker
+Step 1:
+Set the .jar 'execute' permission by chmod 755 
+
+Step 2:
+cd into root directory of the project and build the docker image
+
+docker build -f Dockerfile -t docker-1800flowers .
+
+Step 3:
+Run the image
+
+docker run -p 8085:8085 docker-1800flowers
